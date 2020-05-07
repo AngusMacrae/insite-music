@@ -154,6 +154,37 @@ button:active {
     
 }
 
+footer {
+    
+    align-self: flex-start;
+    margin: auto 0 2rem;
+    
+    display: flex;
+    align-items: center;
+    
+}
+
+footer svg {
+    
+    height: 1.7em;
+    position: relative;
+    top: 0.5em;
+    fill: white;
+    
+}
+
+footer a {
+    
+    color: white;
+    
+}
+
+footer a:hover {
+    
+    text-decoration: none;
+    
+}
+
 
 @-webkit-keyframes Gradient {
 	0% {
