@@ -60,7 +60,8 @@ p {
     
 }
 
-p:last-of-type {
+p:last-of-type,
+input:last-of-type {
     
     margin-bottom: 2em;
     
@@ -76,6 +77,15 @@ a {
 a:hover {
     
     text-decoration: underline;
+    
+}
+
+form {
+    
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 
@@ -112,23 +122,22 @@ button:focus {
 
 button {
     
-    width: 6em;
+    align-self: flex-end;
     font-size: 1rem;
     padding: 0.8rem;
+    width: 6em;
     border-radius: 0.7rem;
-    background-color: white;
     border: none;
-    float: right;
     color: white;
     background-color: black;
-    transition: background-color 200ms, color 200ms;
+    transition: background-color 200ms;
     
 }
 
 button:hover {
     
-    color: black;
-    background-color: white;
+    background-color: #328AC9;
+    cursor: pointer;
     
 }
 
@@ -203,22 +212,28 @@ button:hover {
         
     }
     
-    p:last-of-type {
+    p:last-of-type,
+    input:last-of-type {
 
         margin-bottom: 1em;
 
     }
     
-    input {
+    form {
         
         width: 100%;
         
     }
     
+    input {
+        
+        width: 96%;
+        
+    }
+    
     button {
         
-        float: none;
-        margin: 0 auto;
+        align-self: center;
         
     }
     
