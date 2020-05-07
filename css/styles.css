@@ -56,7 +56,7 @@ body {
 
 p {
     
-    margin: 0 0 1em;;
+    margin: 0 0 1em;
     
 }
 
@@ -187,6 +187,24 @@ button:hover {
     #logo-container {
         
         margin-top: 1rem;
+        
+    }
+    
+    #tagline {
+        
+        font-size: 70%;
+        
+    }
+    
+    p {
+        
+    margin: 0 0 0.5em;        
+        
+    }
+    
+    input {
+        
+        width: 100%;
         
     }
     
