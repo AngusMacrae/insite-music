@@ -125,6 +125,18 @@ input:focus {
 
 }
 
+input::placeholder {
+    
+    transition: color 200ms;
+    
+}
+
+input:focus::placeholder {
+    
+    color: #bcbcbc;
+    
+}
+
 button {
 
     align-self: flex-end;
