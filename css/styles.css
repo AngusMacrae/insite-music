@@ -113,8 +113,7 @@ input {
     
 }
 
-input:focus,
-button:focus {
+input:focus {
     
   box-shadow:inset 0 0 3px 3px #328AC9;
     
@@ -130,7 +129,13 @@ button {
     border: none;
     color: white;
     background-color: black;
-    transition: background-color 200ms;
+    transition: background-color 200ms, color 200ms;
+    
+}
+
+button:focus {
+    
+  box-shadow:inset 0 0 3px 3px white; 
     
 }
 
@@ -138,6 +143,14 @@ button:hover {
     
     background-color: #328AC9;
     cursor: pointer;
+    
+}
+
+button:active {
+    
+    background-color: white;
+    color: black;
+    box-shadow: none;
     
 }
 
