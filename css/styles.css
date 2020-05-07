@@ -112,7 +112,7 @@ button:focus {
 
 button {
     
-    width: 5em;
+    width: 6em;
     font-size: 1rem;
     padding: 0.8rem;
     border-radius: 0.7rem;
@@ -169,5 +169,34 @@ button:hover {
 	}
 }
 
+@media (max-width: 700px) {
+    
+    .container {
+        
+        width: 100%;
+        
+    }
+    
+    body {
+
+        padding-left: 1rem;
+        padding-right: 1rem;
+        
+    }
+    
+    #logo-container {
+        
+        margin-top: 1rem;
+        
+    }
+    
+    button {
+        
+        float: none;
+        margin: 0 auto;
+        
+    }
+    
+}
 
 /*media query below 700px to make container full width plus add padding, and also reduce top padding on logo*/
