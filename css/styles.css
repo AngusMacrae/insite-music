@@ -31,6 +31,8 @@ body {
 
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
     margin-top: 4rem;
     margin-bottom: 1rem;
 
@@ -39,17 +41,15 @@ body {
 #main-logo {
 
     max-width: 80%;
-    padding: 0;
-    margin: 0;
+    flex-grow: 1;
+    margin-right: 0.5rem;
 
 }
 
 #tagline {
 
     font-weight: bold;
-    max-width: 20%;
-    padding: 0;
-    margin: 0;
+    flex-shrink: 0;
     opacity: 0.6;
     cursor: default;
 
@@ -234,7 +234,7 @@ footer a:hover {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 640px) {
 
     .container {
 
@@ -253,7 +253,6 @@ footer a:hover {
 
         margin-top: 1rem;
         margin-bottom: 0.5rem;
-        justify-content: center;
 
     }
 
