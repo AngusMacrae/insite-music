@@ -187,6 +187,7 @@ button:hover {
     #logo-container {
         
         margin-top: 1rem;
+        margin-bottom: 0.5rem;
         
     }
     
@@ -198,8 +199,14 @@ button:hover {
     
     p {
         
-    margin: 0 0 0.5em;        
+    margin: 0 0 0.7em;        
         
+    }
+    
+    p:last-of-type {
+
+        margin-bottom: 1em;
+
     }
     
     input {
@@ -216,5 +223,3 @@ button:hover {
     }
     
 }
-
-/*media query below 700px to make container full width plus add padding, and also reduce top padding on logo*/
