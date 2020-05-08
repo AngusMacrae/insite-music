@@ -142,7 +142,7 @@ button {
     letter-spacing: 0.04em;
     padding: 0.9em;
     margin-left: 1em;
-    width: 6.5em;
+    width: 6em;
     border-radius: 0.7rem;
     border: 1px solid transparent;
     color: white;
@@ -295,13 +295,7 @@ footer a:hover {
     form {
 
         width: 95%;
-
-    }
-
-
-    button {
-
-        justify-self: flex-end;
+        justify-content: flex-end;
 
     }
 
