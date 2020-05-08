@@ -100,18 +100,24 @@ button:focus {
 input,
 button {
     font-family: inherit;
+    font-size: 1rem;
+    padding: 0.9em;
+    border: 1px solid transparent;
+    border-radius: 2em;
+    transition: background-color 200ms, color 200ms, border-color 200ms;
 }
 
 input {
 
     flex: 1;
     min-width: 60%;
-    font-size: 1rem;
-    padding: 0.9em;
-    border-radius: 0.7em;
     margin-bottom: 1em;
-    border: 1px solid transparent;
-    transition: background-color 200ms, color 200ms, border-color 200ms;
+    
+}
+
+input:hover {
+    
+    background-color: hsl(205, 60%, 90%);
     
 }
 
@@ -137,17 +143,12 @@ input:focus::placeholder {
 
 button {
 
-    font-size: 1rem;
     font-weight: bold;
     letter-spacing: 0.04em;
-    padding: 0.9em;
     margin-left: 1em;
     width: 6em;
-    border-radius: 0.7rem;
-    border: 1px solid transparent;
     color: white;
     background-color: black;
-    transition: background-color 200ms, color 200ms, border-color 200ms;
 
 }
 
