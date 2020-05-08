@@ -33,7 +33,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 
 }
 
@@ -262,8 +262,8 @@ footer a:hover {
 
     #logo-container {
 
-        margin-top: 1rem;
-        margin-bottom: 0.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
         padding: 0 0.5rem;
 
     }
