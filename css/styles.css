@@ -8,7 +8,7 @@ body {
     line-height: 2rem;
 
     color: #fff;
-    background: linear-gradient(-45deg, hsl(0, 79%, 44%), hsl(323, 59%, 44%), hsl(62, 68%, 36%), hsl(277, 77%, 52%));
+    background: linear-gradient(-45deg, hsl(222, 79%, 44%), hsl(0, 59%, 44%), hsl(62, 81%, 28%), hsl(277, 77%, 52%));
     background-size: 400% 400%;
     -webkit-animation: Gradient 15s ease infinite;
     -moz-animation: Gradient 15s ease infinite;
