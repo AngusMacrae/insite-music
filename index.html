@@ -1,38 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insite Music - Get to Know</title>
-    <meta name="description" content="">
-    <meta name="author" content="Angus Macrae">
-    <link rel="icon" type="image/png" href="images/logo-square-small-transparent.png">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title></title>
+    <link rel="stylesheet" href="css/am-reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/spinner.css">
 </head>
 
 <body>
 
-    <div class="container">
-
+    <header>
         <div id="logo-container">
             <img id="main-logo" src="images/logo-transparent-medium.png">
             <span id="tagline">get to know</span>
         </div>
+    </header>
+    <main class="show-page-1">
+        <div class="page active-page" data-pagenum="1" id="landing-page">
+            <div class="content-container">
+                <p><strong>We make communication easier.</strong></p>
+                <p>Just pass us your target journalist's Twitter. We’ll analyse their feed and provide you with insight into their musical tastes, allowing you to more accurately pitch. Press the button below to request an analysis.</p>
+                <p>We also run a regular bulletin of news and moves from the world of musical journalism. Send an email to <a href="mailto:info@insite-music.com?subject=Bulletin sign-up&body=Please sign me up!" tabindex="-1" id="bulletin-signup-mailto-link">info@insite-music.com</a> to sign up.</p>
+                <button id="show-input-page-btn">Request an Analysis</button>
+            </div>
+        </div>
+        <div class="page" data-pagenum="2" id="input-page">
+            <div class="content-container">
+                <p>Fill in the contact form below to request an analysis of your target journalist's Twitter feed.</p>
+                <form class="" method="post">
+                    <input type="text" name="name" id="name" placeholder="Your name (required)" required>
+                    <input type="email" name="email" id="email" placeholder="Your email address (required)" autocapitalize="none" spellcheck="off" required>
+                    <input type="text" name="target" id="target" placeholder="Your target's Twitter handle (required)" autocapitalization="off" autocomplete="off" autocorrect="off" spellcheck="off" required>
+                    <button id="submit-btn">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="page" data-pagenum="3" id="loading-page">
+            <div class="content-container">
+                <div id="loading-msg-container">
+                    <div class="fancy-spinner">
+                        <div class="ring"></div>
+                        <div class="ring"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <span>Working...</span>
+                </div>
+            </div>
+        </div>
+        <div class="page" data-pagenum="4" id="result-page">
+            <div class="content-container">
+                <p>Results of analysis go here</p>
+                <button id="another-request-btn">Request another analysis</button>
+            </div>
+        </div>
+    </main>
 
-        <p><strong>We make communication easier.</strong></p>
-        <p>Just pass us your target journalist's Twitter using the contact form below. We’ll analyse their feed and provide you with insight into their musical tastes, allowing you to more accurately pitch.</p>
-        <p>We also run a regular bulletin of news and moves from the world of musical journalism. Send an email to <a href="mailto:info@insite-music.com?subject=Bulletin sign-up&body=Please sign me up!" tabindex="-1">info@insite-music.com</a> to sign up.</p>
-
-        <form class="" method="post">
-            <input type="text" name="name" id="name" placeholder="Your name (required)" required>
-            <input type="email" name="email" id="email" placeholder="Your email address (required)" autocapitalize="none" spellcheck="off" required>
-            <input type="text" name="target" id="target" placeholder="Your target's Twitter handle (required)" autocapitalization="off" autocomplete="off" autocorrect="off" spellcheck="off" required>
-            <button>Send</button>
-        </form>
-
-        <footer>
+    <footer>
+        <div class="content-container">
             <a href="https://twitter.com/insite_music">
 
                 <svg version="1.1" id="Capa_1" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -46,9 +73,8 @@
                  C480.224,136.96,497.728,118.496,512,97.248z" /></svg>
 
                 @insite_music</a>
-        </footer>
-
-    </div>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>

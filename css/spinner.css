@@ -1,0 +1,52 @@
+.fancy-spinner {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 5rem;
+  height: 5rem;
+}
+.fancy-spinner div {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+.fancy-spinner div.ring {
+  border-width: 0.5rem;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-animation: 2s fancy infinite alternate;
+          animation: 2s fancy infinite alternate;
+}
+.fancy-spinner div.ring:nth-child(1) {
+  border-left-color: #328AC9;
+  border-right-color: lightgrey;
+}
+.fancy-spinner div.ring:nth-child(2) {
+  border-top-color: #328AC9;
+  border-bottom-color: lightgrey;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.fancy-spinner div.dot {
+  width: 1rem;
+  height: 1rem;
+  background: #328AC9;
+}
+
+@-webkit-keyframes fancy {
+  to {
+    -webkit-transform: rotate(360deg) scale(0.5);
+            transform: rotate(360deg) scale(0.5);
+  }
+}
+
+@keyframes fancy {
+  to {
+    -webkit-transform: rotate(360deg) scale(0.5);
+            transform: rotate(360deg) scale(0.5);
+  }
+}
