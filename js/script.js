@@ -18,7 +18,7 @@ submitBtn.addEventListener('click', function (e) {
 //    makeAJAXrequest("POST", "url.com/blac", showResults, true);
     
     // temp
-    setTimeout(showResults, 2500);
+    setTimeout(showResults, 3500);
 
 });
 
