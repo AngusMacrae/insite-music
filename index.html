@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Insite Music - Get to Know</title>
     <link rel="stylesheet" href="css/am-reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/spinner.css">
@@ -18,15 +18,18 @@
             <span id="tagline">get to know</span>
         </div>
     </header>
-    <main class="show-page-1">
+
+    <main class="show-page-1 transition">
+
         <div class="page active-page" data-pagenum="1" id="landing-page">
             <div class="content-container">
                 <p><strong>We make communication easier.</strong></p>
                 <p>Just pass us your target journalist's Twitter. We’ll analyse their feed and provide you with insight into their musical tastes, allowing you to more accurately pitch. Press the button below to request an analysis.</p>
                 <p>We also run a regular bulletin of news and moves from the world of musical journalism. Send an email to <a href="mailto:info@insite-music.com?subject=Bulletin sign-up&body=Please sign me up!" tabindex="-1" id="bulletin-signup-mailto-link">info@insite-music.com</a> to sign up.</p>
-                <button id="show-input-page-btn">Request an Analysis</button>
+                <button id="show-input-page-btn">Get Insite</button>
             </div>
         </div>
+
         <div class="page" data-pagenum="2" id="input-page">
             <div class="content-container">
                 <p>Fill in the contact form below to request an analysis of your target journalist's Twitter feed.</p>
@@ -38,6 +41,7 @@
                 </form>
             </div>
         </div>
+
         <div class="page" data-pagenum="3" id="loading-page">
             <div class="content-container">
                 <div id="loading-msg-container">
@@ -46,16 +50,33 @@
                         <div class="ring"></div>
                         <div class="dot"></div>
                     </div>
-                    <span>Working...</span>
+                    <span id="working">Working</span>
                 </div>
             </div>
         </div>
+
         <div class="page" data-pagenum="4" id="result-page">
             <div class="content-container">
-                <p>Results of analysis go here</p>
+                <div id="target-info-container">
+                    <img src="images/target-picture-sample.jpg" id="targetImage">
+                    <div id="target-info-details">
+                        <p>Your target: <strong><span id="targetID">Jo Bloggs</span></strong></p>
+                        <p>Analysed <span id="tweetCount">3526</span> tweets over <span id="tweetTimeFrame">3 years</span></p>
+                    </div>
+                </div>
+                <div id="charts-container">
+                    <canvas id="wordCloud"></canvas>
+                    <div class="chart-container" style="position: relative; height:200px; width:50%">
+                        <canvas id="chart1"></canvas>
+                    </div>
+                    <div class="chart-container" style="position: relative; height:200px; width:50%">
+                        <canvas id="doughnut-chart"></canvas>
+                    </div>
+                </div>
                 <button id="another-request-btn">Request another analysis</button>
             </div>
         </div>
+
     </main>
 
     <footer>
@@ -76,7 +97,9 @@
         </div>
     </footer>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
