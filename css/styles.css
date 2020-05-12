@@ -251,7 +251,7 @@ input:focus {
 input {
     font-family: inherit;
     font-size: 1rem;
-    padding: 0.9em;
+    padding: 0.9em 1.4em;
     border: 1px solid transparent;
     border-radius: 2em;
     transition: background-color 200ms, color 200ms, border-color 200ms;
