@@ -32,8 +32,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 8vh;
-    margin-bottom: 3rem;
+    margin: 8vh 0 7vh;
 
 }
 
@@ -101,7 +100,7 @@ input,
 button {
     font-family: inherit;
     font-size: 1rem;
-    padding: 0.9em;
+    padding: 0.9em 1.2em;
     border: 1px solid transparent;
     border-radius: 2em;
     transition: background-color 200ms, color 200ms, border-color 200ms;
