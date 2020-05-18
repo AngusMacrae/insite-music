@@ -32,7 +32,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 8vh;
     margin-bottom: 3rem;
 
 }
@@ -112,13 +112,13 @@ input {
     flex: 1;
     min-width: 60%;
     margin-bottom: 1em;
-    
+
 }
 
 input:hover {
-    
+
     background-color: hsl(205, 60%, 90%);
-    
+
 }
 
 input:focus {
@@ -130,15 +130,15 @@ input:focus {
 }
 
 input::placeholder {
-    
+
     transition: color 200ms;
-    
+
 }
 
 input:focus::placeholder {
-    
+
     color: #bcbcbc;
-    
+
 }
 
 button {
@@ -273,12 +273,12 @@ footer a:hover {
         display: none;
 
     }
-    
+
     #main-logo {
-        
+
         max-width: 100%;
         margin: 0;
-        
+
     }
 
     p {
